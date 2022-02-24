@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    <title>CSC 413 PROJECT</title>
+</head>
+<body>
+<div id="general">
+    <div id="left" style="background-image: url({{url_for('static', filename='bg.jpg')}});
+    background-attachment: fixed;background-size:contain; background-repeat: none;">
+        <h1>Given array is: {{a}}<br>Sorted array is: {{b}}</h1>
+    </div>
+    <div id="right">
+        <h2 style="padding: 10px;margin: 10px;">IMPLEMENTATION OF PROJECT</h2>
+        <form method="POST">
+            <label for="stuff1">Enter the values in the array :</label>
+            <input type="text" id="stuff1" name="values" placeholder="Enter values" required>
+            <br>
+            <p style="color:grey;">"Separate them with a comma"</p>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
